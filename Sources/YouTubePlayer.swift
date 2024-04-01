@@ -1,5 +1,6 @@
 import Combine
 import Foundation
+import WebKit
 
 // MARK: - YouTubePlayer
 
@@ -85,6 +86,9 @@ public final class YouTubePlayer: ObservableObject {
         self.configuration = configuration
     }
     
+    public func getWebView() -> WKWebView {
+        webView
+    }
 }
 
 // MARK: - YouTubePlayer+ExpressibleByStringLiteral
